@@ -1,0 +1,8 @@
+:root {
+    --main: #1d1d1f;
+    --bg-body: #f5f5f7;
+    --btn-border-disabled:#999999;
+    --btn-bg-disabled:#f3f4f5;
+    --btn-color-disabled:#808e9b;
+    --btn-color-disabled-hover:#666666
+  }
