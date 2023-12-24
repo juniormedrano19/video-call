@@ -1,16 +1,17 @@
 
 import './App.css'
-import { Landing } from './presentation/views/Landing'
+import { AppRouter } from './infraestructure/AppRouter'
+
 
 function App() {
 
 
   return (
-    <>
+    
 
-      <Landing />
+      <AppRouter />
       
-    </>
+  
   )
 }
 

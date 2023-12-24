@@ -1,0 +1,95 @@
+@import url("../../../variables.css");
+
+.layout {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid:
+    "header header header" 140px
+    "body body body" minmax(0, 1fr)
+    "footer footer footer" 140px
+    / auto 1fr auto;
+  /* gap: 8px; */
+}
+
+.header {
+  grid-area: header;
+  border: 1px solid red;
+  border-top: 1.5px solid rgba(217, 217, 217, 0.29);
+
+  border-bottom: 1.5px solid rgba(217, 217, 217, 0.29);
+  
+  border-left: 1.5px solid rgba(217, 217, 217, 0.29);
+  
+  background: #FFF;
+}
+
+.body {
+  grid-area: body;
+  background: #F1F0F0;
+}
+
+.footer {
+  grid-area: footer;
+
+  border: 1.5px solid #EDF0F6;
+
+background: #FFF;
+
+backdrop-filter: blur(4px);
+}
+
+.header-call{
+   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-call{
+ 
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-button{
+
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+}
+
+.footer-button>div:nth-child(1){
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.footer-button:nth-child(1),.footer-button:nth-child(2),.footer-button:nth-child(3){
+    background: #0060FF;
+}
+
+.footer-button:nth-child(5),.footer-button:nth-child(6){
+    background: #DFEBFF;
+}
+
+.footer-button:nth-child(4){
+    background: #EB5757;
+}
+
+.footer-button:nth-child(6) svg{
+    width: 28px !important;
+    height: 28px !important;
+    color: #0060FF;
+}

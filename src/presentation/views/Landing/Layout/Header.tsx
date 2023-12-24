@@ -1,5 +1,4 @@
-import Svg from "../../../../components/Svg"
-import { Icons } from "../../../../components/Svg/iconsPack"
+
 import styles from '../landing.module.css'
 
 
