@@ -2,6 +2,6 @@
 
 export const BodyCall = () => {
   return (
-    <div>BodyCall</div>
+    <div></div>
   )
 }
