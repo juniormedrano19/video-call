@@ -16,7 +16,6 @@ interface IProps {
 
 const Svg = ({ children, icon, className, ...props }: IProps) => {
   if (!icon) {
-    // Puedes manejar el caso cuando 'icon' es indefinido o no válido.
     return null;
   }
 

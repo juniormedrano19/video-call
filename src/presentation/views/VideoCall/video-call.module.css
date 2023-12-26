@@ -7,14 +7,14 @@
   grid:
     "header header header" 140px
     "body body body" minmax(0, 1fr)
-    "footer footer footer" 140px
+  
     / auto 1fr auto;
-  /* gap: 8px; */
+ 
 }
 
 .header {
   grid-area: header;
-  border: 1px solid red;
+
   border-top: 1.5px solid rgba(217, 217, 217, 0.29);
 
   border-bottom: 1.5px solid rgba(217, 217, 217, 0.29);
@@ -27,9 +27,10 @@
 .body {
   grid-area: body;
   background: #f1f0f0;
+  height: 100%;
 }
 
-.footer {
+/* .footer {
   grid-area: footer;
 
   border: 1.5px solid #edf0f6;
@@ -37,7 +38,7 @@
   background: #fff;
 
   backdrop-filter: blur(4px);
-}
+} */
 
 .header-call {
   height: 100%;
@@ -126,6 +127,12 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+}
+
+.img-avatar>p{
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .text-avatar {
@@ -239,10 +246,16 @@ font-weight: 600;
 
 }
 .footer-call {
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1.5px solid #edf0f6;
+
+  background: #fff;
+
+  backdrop-filter: blur(4px);
+  height: 140px;
 }
 
 .wrapper-footer {
@@ -251,7 +264,9 @@ font-weight: 600;
   justify-content: center;
   gap: 20px;
 }
-
+.footer-button:hover{
+  opacity: .8;
+}
 .footer-button {
   width: 60px;
   height: 60px;
@@ -260,6 +275,32 @@ font-weight: 600;
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  border: none ;
+  transition: background .3s ease;
+}
+.footer-button.allText{
+  display: block;
+  width: 200px ;
+  display: flex;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-button.allText>p{
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+.footer-button.allText>div{
+  width: 28px !important;
+  height: 28px !important;
+}
+.footer-button.allText svg{
+  width: 28px !important;
+  height: 28px !important;
+  flex: 1;
 }
 
 .footer-button > div:nth-child(1) {
@@ -270,20 +311,143 @@ font-weight: 600;
 .footer-button:nth-child(1),
 .footer-button:nth-child(2),
 .footer-button:nth-child(3) {
-  background: #0060ff;
+  background: #0060ff ;
 }
 
-.footer-button:nth-child(5),
-.footer-button:nth-child(6) {
+.footer-button:nth-child(6),
+.footer-button:nth-child(7) {
   background: #dfebff;
 }
 
-.footer-button:nth-child(4) {
+.footer-button:nth-child(4),.footer-button:nth-child(5) {
   background: #eb5757;
 }
-
-.footer-button:nth-child(6) svg {
+.footer-button:nth-child(4) svg{
+  color: #fff;
+}
+ .footer-button:nth-child(6) svg  {
   width: 28px !important;
   height: 28px !important;
+
+}
+.footer-button:nth-child(7) svg {
+
   color: #0060ff;
+}
+
+.inactive-footer-button{
+  background: #eb5757 !important ;
+
+}
+.footer-button:nth-child(3).inactive-footer-button>div{
+  width: 28px !important;
+  height: 28px !important;
+}
+.footer-button:nth-child(3).inactive-footer-button>div svg{
+  width: 28px !important;
+  height: 28px !important;
+  color: #fff;
+}
+.body-call{
+
+height: 100%;
+display: flex;
+flex-direction: column;
+
+}
+
+.main-call{
+  height: calc(100% - 140px);
+}
+
+.user-list{
+
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+
+.local-user{
+  height: 100%;
+flex: 1;
+  object-fit: cover;
+}
+
+.local-user>div{
+  width: 100%;
+  border-radius: 20px;
+}
+
+.remote-users{
+  width: 300px;
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  overflow-y: auto;
+}
+
+
+
+.remote-full{
+  height: 100%;
+}
+.remote-full>div{
+  border-radius: 20px;
+  height: 100% !important;
+}
+.remote-user{
+
+  height: 200px;
+}
+
+.remote-user>div{
+  border-radius: 20px;
+  height: 200px !important;
+}
+.user-name{
+  border-radius: 20px;
+  padding: 10px;
+/* background: rgba(0, 0, 0, 0.30); */
+background: #A2A2A2;
+
+backdrop-filter: blur(4.083333492279053px);
+color: #FFF;
+
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5;
+position: absolute;
+bottom: 10px;
+left: 10px;
+}
+
+.microphone{
+  position: absolute;
+bottom: 10px;
+right: 10px;
+
+padding: 10px;
+border-radius: 50%;
+}
+
+.microphone>div{
+width: 26px;
+height: 26px;
+}
+.microphone svg{
+  width: 100%;
+  height: 100%;
+}
+.microphone-off{
+  background: #EB5757 !important;
+}
+
+.microphone-on{
+  background: #0060FF !important;
 }

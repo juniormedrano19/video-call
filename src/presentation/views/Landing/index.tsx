@@ -1,4 +1,4 @@
-import { Aside } from "./Layout/Aside";
+
 import { Footer } from "./Layout/Footer";
 import { Header } from "./Layout/Header";
 import { Hero } from "./Layout/Hero";
@@ -14,7 +14,7 @@ export const Landing = () => {
         <Section />
 
         <Hero />
-        {/* <Aside /> */}
+      
         <Footer />
       </div>
     </div>
