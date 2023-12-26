@@ -100,6 +100,19 @@
   font-weight: 500;
 }
 
+.version-control > li > a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.version-control > li>a{
+  transition: background .3s ease;
+}
+.version-control > li>a:hover{
+  color: #fff;
+}
+.version-control> li > a:visited {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .section {
   align-items: center;
   display: flex;

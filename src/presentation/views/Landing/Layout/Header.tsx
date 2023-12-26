@@ -14,9 +14,15 @@ export const Header = () => {
 
            
                     <ul className={styles['version-control']}>
-                        <li>Bitbucket</li>
-                        <li>GitLab</li>
-                        <li>GitHub</li>
+                        <li>
+                        <a href="https://bitbucket.org/juniormed19/video-call/src/main/" target="_blank">BitBucket</a>
+                        </li>
+                        <li>
+                        <a href="https://gitlab.com/junior.med19/video-call" target="_blank">GitLab</a>
+                        </li>
+                        <li>
+                        <a href="https://github.com/juniormedrano19/video-call" target="_blank">GitHub</a>
+                        </li>
                     </ul>
                
             </nav>
