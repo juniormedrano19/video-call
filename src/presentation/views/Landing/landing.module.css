@@ -305,8 +305,38 @@
 .options-footer > li > a:visited {
   color: var(--text-color-landing);
 }
+
+.main{
+
+width: 1200px;
+z-index: 3;
+position: relative;
+}
+.wrapper-main{
+
+}
+.hero{
+
+}
+.hero-img{
+  position: relative;
+}
+
+.hero>.video2{
+  position: absolute;
+bottom:20px;
+right: 20px;
+
+}
+.hero>.video1{
+  position: absolute;
+top: 20px;
+left: 20px;
+}
 @media (min-width: 1000px) and (max-width: 1599px) {
   .wrapper {
     width: 1000px;
   }
 }
+
+
