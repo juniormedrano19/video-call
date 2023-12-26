@@ -17,7 +17,7 @@ import { IBodyCall, ICallButton } from "../../../application/interfaces";
 import { Icons } from "../../../components/Svg/iconsPack";
 import Svg from "../../../components/Svg";
 
-export const BodyCall = ({ inCall }: IBodyCall) => {
+export const BodyCall = ({ inCall, user }: IBodyCall) => {
   const [calling, setCalling] = useState<boolean>(inCall);
   const isConnected = useIsConnected();
 
@@ -164,7 +164,7 @@ export const BodyCall = ({ inCall }: IBodyCall) => {
                   playVideo={cameraOn}
                   cover="https://www.agora.io/en/wp-content/uploads/2022/10/3d-spatial-audio-icon.svg"
                 >
-                  <span className={styles["user-name"]}>Junior Medrano</span>
+                  <span className={styles["user-name"]}>{user}</span>
                   <div
                     className={`${
                       micOn

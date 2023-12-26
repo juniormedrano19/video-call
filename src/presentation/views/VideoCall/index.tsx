@@ -26,7 +26,7 @@ export const VideoCall = () => {
             </div>
 
             <div className={styles["body"]}>
-              <BodyCall inCall={inCall} />
+              <BodyCall inCall={inCall} user={user} />
             </div>
           </section>
         </AgoraRTCProvider>

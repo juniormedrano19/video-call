@@ -12,6 +12,7 @@ export interface ICallButton {
 
 export interface IBodyCall {
   inCall: boolean;
+  user: string;
 }
 export interface IHeaderCall {
   imgUser: string;
