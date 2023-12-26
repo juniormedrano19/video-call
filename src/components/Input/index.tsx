@@ -109,7 +109,7 @@ const Input: FC<IInput> = ({
         e.key === "ArrowRight" ||
         e.key === "Tab" ||
         ((e.ctrlKey || e.metaKey) &&
-          (e.key.toLowerCase() === "c" || e.key.toLowerCase() === "x" || e.key.toLowerCase() === "v")); // Permite copiar, cortar y pegar
+          (e.key.toLowerCase() === "c" || e.key.toLowerCase() === "x" || e.key.toLowerCase() === "v")); 
 
       if (onlyNumbers && !isControlKey && !/[0-9]/.test(e.key)) {
         e.preventDefault();
