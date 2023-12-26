@@ -335,15 +335,7 @@ left: 20px;
 
 }
 
-.hero>.video1>video{
-  width: 700px;
-  height: 700px;
-}
 
-.hero>.video2>video{
-  width: 700px;
-  height: 700px;
-}
 @media (min-width: 1000px) and (max-width: 1599px) {
   .wrapper {
     width: 1000px;
