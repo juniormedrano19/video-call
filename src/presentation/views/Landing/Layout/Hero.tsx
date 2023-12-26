@@ -7,7 +7,6 @@ export const Hero = () => {
   const videoRef1 = useRef<HTMLVideoElement | null>(null);
   const videoRef2 = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
-    // Reproducir los videos automáticamente después de que el componente se haya montado
     if (videoRef1.current) {
       videoRef1.current.play();
     }
@@ -37,27 +36,13 @@ export const Hero = () => {
             />
           </div>
           <div className={styles.video1}>
-            <video
-              ref={videoRef1}
-              width="640"
-              height="360"
-              controls
-              autoPlay
-              muted
-            >
+            <video ref={videoRef1} width="640" height="360" autoPlay muted>
               <source src={video2} type="video/mp4" />
               Tu navegador no soporta el tag de video.
             </video>
           </div>
           <div className={styles.video2}>
-            <video
-              ref={videoRef2}
-              width="640"
-              height="360"
-              controls
-              autoPlay
-              muted
-            >
+            <video ref={videoRef2} width="640" height="360" autoPlay muted>
               <source src={video1} type="video/mp4" />
               Tu navegador no soporta el tag de video.
             </video>
